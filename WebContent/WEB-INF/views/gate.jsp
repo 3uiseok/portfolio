@@ -27,7 +27,7 @@
 		<p id="gate-error" class="gate-error" role="alert" <c:if test="${not gateError}">hidden</c:if>>코드가 올바르지 않습니다.</p>
 	</form>
 </main>
-<%-- 정적 게시본(GitHub Pages)은 scripts/export-static.sh 가 아래 표시 자리에 암호화된 화면을 넣는다 --%>
+<%-- 정적 게시본(GitHub Pages)은 _scripts/export-static.sh 가 아래 표시 자리에 암호화된 화면을 넣는다 --%>
 <!-- gate-payload -->
 <script src="${ctx}/js/gate.js"></script>
 </body>

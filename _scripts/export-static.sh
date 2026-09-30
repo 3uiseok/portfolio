@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 실행 중인 웹의 화면을 정적 파일로 내보낸다 (GitHub Pages 게시용).
-#   사용: bash scripts/export-static.sh [출력폴더=_site]
+#   사용: bash _scripts/export-static.sh [출력폴더=_site]
 #   BASE_URL  내보낼 웹 주소 (기본 http://localhost:8080/web)
 #   BASE_PATH 게시될 경로 접두사. 예: /portfolio  (도메인 루트에 게시하면 빈 값)
 #   GATE_CODE 확인 코드. 웹에 지정한 것과 같은 값을 주면 각 화면을 이 코드로 암호화해

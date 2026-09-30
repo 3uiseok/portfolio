@@ -38,7 +38,7 @@ jobs:
           docker compose logs
           exit 1
       - name: 정적 페이지 내보내기
-        run: bash scripts/export-static.sh _site
+        run: bash _scripts/export-static.sh _site
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v5

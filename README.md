@@ -26,10 +26,10 @@ Docker 없이 로컬 Tomcat 11 로 띄우려면 `run.cmd` 를 실행합니다 (�
 ## GitHub Pages 게시
 
 `main` 에 push 하면 `.github/workflows/pages.yml` 이 웹을 Docker 로 띄운 뒤
-`scripts/export-static.sh` 로 화면을 정적 페이지로 내보내 GitHub Pages 에 게시합니다.
+`_scripts/export-static.sh` 로 화면을 정적 페이지로 내보내 GitHub Pages 에 게시합니다.
 
 로컬에서 내보내기만 확인하려면 웹을 띄운 상태에서 실행합니다.
 
 ```
-GATE_CODE=코드 BASE_PATH=/portfolio bash scripts/export-static.sh _site
+GATE_CODE=코드 BASE_PATH=/portfolio bash _scripts/export-static.sh _site
 ```
