@@ -18,7 +18,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # 확인 코드. 저장소 Settings > Secrets and variables > Actions 의 GATE_CODE
+      GATE_CODE: ${{ secrets.GATE_CODE }}
     steps:
+      - name: 확인 코드 설정 여부 확인
+        run: test -n "$GATE_CODE" || { echo "::error::GATE_CODE secret 이 없습니다. 잠금 없이 게시되지 않도록 중단합니다."; exit 1; }
       - uses: actions/checkout@v7
       - uses: actions/configure-pages@v6
         id: pages

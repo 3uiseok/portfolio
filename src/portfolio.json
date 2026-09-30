@@ -9,7 +9,8 @@
     "intro": [
       "2016년부터 Java와 Spring Framework로 공공·통신 분야의 웹 시스템을 개발하고 유지보수해 온 웹/백엔드 개발자입니다.",
       "경찰청 민원포털 유지보수, 공항공사 상주 프로젝트, KT 지능망 운용관리 웹까지 폐쇄망을 포함한 운영 환경에서 웹/서버 개발을 맡아 왔습니다.",
-      "JDK 6부터 21까지, Tomcat 6부터 11까지 여러 세대의 환경을 다뤘고 JDK 7 시스템을 JDK 21로 마이그레이션한 경험이 있습니다."
+      "JDK 6부터 21까지, Tomcat 6부터 11까지 여러 세대의 환경을 다뤘고 JDK 7 시스템을 JDK 21로 마이그레이션한 경험이 있습니다.",
+      "2026년부터는 Claude Code, Gemini 같은 AI 도구를 프로젝트 분석과 문서 정리, 테스트와 결과서 작성에 접목하고 있고, 바이브 코딩으로 업무 편의 도구와 여러 사이드 프로젝트를 만들어 보고 있습니다."
     ],
     "email": "3uiseok@gmail.com",
     "location": "대한민국, 서울",
@@ -22,10 +23,12 @@
   "skills": [
     { "category": "Language", "items": ["Java (JDK 6 · 7 · 8 · 11 · 21)", "JavaScript", "SQL"] },
     { "category": "Backend", "items": ["Spring Framework", "Spring MVC", "JSP / JSTL", "MQ 연동"] },
-    { "category": "Server / WAS", "items": ["Tomcat 6 · 7 · 8 · 11", "Linux (Red Hat)", "Windows Server"] },
+    { "category": "Server / WAS", "items": ["Tomcat 6 · 7 · 8 · 11", "Linux (Red Hat)", "Windows Server", "Docker (개인 환경 구축)"] },
     { "category": "Database", "items": ["Oracle", "MySQL", "MariaDB", "Tibero", "MSSQL", "Altibase"] },
-    { "category": "형상관리 · 배포", "items": ["SVN", "GitLab", "Jenkins", "WAR 수작업 배포"] },
-    { "category": "기타", "items": ["폐쇄망 환경 개발", "EUC-KR · UTF-8 인코딩 환경", "Flutter (Android 앱 · 약 3개월)"] }
+    { "category": "형상관리 · 배포", "items": ["SVN", "GitLab", "Jenkins", "WAR 수작업 배포", "sh 배포 스크립트"] },
+    { "category": "IDE · 개발 도구", "items": ["IntelliJ IDEA Ultimate", "Eclipse (2021-03 · 최신 버전)", "WinSCP", "DBeaver", "Beyond Compare", "Xshell"] },
+    { "category": "AI 활용", "items": ["Claude Code (Max 요금제)", "Gemini AI Pro", "Playwright", "Aside 브라우저", "바이브 코딩"] },
+    { "category": "기타", "items": ["폐쇄망 환경 개발", "EUC-KR · UTF-8 인코딩 환경", "Flutter (App Store · Google Play 출시)"] }
   ],
 
   "experiences": [
@@ -38,7 +41,8 @@
         "폐쇄망 환경의 운용관리 웹 개발",
         "131, 1390 웹 개발",
         "Spring Framework 기반 JDK 6 · 7 · 8 · 21 환경 개발, JDK 7 → 21 마이그레이션",
-        "Linux(Red Hat) 서버 환경에서 WAR 수작업 배포"
+        "Linux(Red Hat) 서버 환경에서 WAR 수작업 배포",
+        "개발 환경을 Eclipse 에서 IntelliJ IDEA 로 전환 중"
       ]
     },
     {
@@ -100,6 +104,49 @@
       "featured": false
     },
     {
+      "id": "ai-workflow",
+      "name": "AI 도구 활용 · 바이브 코딩",
+      "period": "2026 - 현재",
+      "role": "개발 업무 · 사이드 프로젝트에 접목",
+      "summary": "Claude Code(Max 요금제)와 Gemini AI Pro 를 개발 업무와 사이드 프로젝트에 접목해 쓰고 있습니다.",
+      "description": [
+        "프로젝트 분석과 문서 정리에 AI 를 활용합니다.",
+        "Playwright 와 Aside 브라우저를 함께 써서 테스트하고 결과서를 작성합니다.",
+        "바이브 코딩으로 업무 편의 도구를 비롯한 다양한 사이드 프로젝트를 만들어 보고 있습니다."
+      ],
+      "tech": ["Claude Code", "Gemini", "Playwright"],
+      "links": [],
+      "featured": true
+    },
+    {
+      "id": "work-tools",
+      "name": "업무 편의 도구 (Query Binder · 배포 스크립트)",
+      "period": "2026",
+      "role": "사이드 프로젝트",
+      "summary": "반복되는 작업을 줄이려고 AI 를 활용해 만든 업무 편의 도구들입니다.",
+      "description": [
+        "Query Binder: 로그 전체를 그대로 붙여 넣으면 쿼리만 골라 복사할 수 있는 도구입니다.",
+        "배포 도구: sh 스크립트로 만든 배포 도구입니다."
+      ],
+      "tech": ["Shell Script"],
+      "links": [],
+      "featured": false
+    },
+    {
+      "id": "flutter-app",
+      "name": "Flutter 앱 개발 · 스토어 출시",
+      "period": "약 3개월",
+      "role": "앱 개발",
+      "summary": "Flutter 로 앱을 개발해 App Store 와 Google Play 스토어에 올렸습니다.",
+      "description": [
+        "Flutter 로 Android / iOS 앱을 개발했습니다.",
+        "App Store 등록과 인증 절차를 거쳐 앱을 올렸고, Google Play 스토어에도 같은 과정으로 출시했습니다."
+      ],
+      "tech": ["Flutter"],
+      "links": [],
+      "featured": false
+    },
+    {
       "id": "es-web",
       "name": "ES Web 포트폴리오 사이트",
       "period": "2026.09",
@@ -109,7 +156,8 @@
         "포트폴리오 내용을 JSON 파일 하나로 관리하고 서비스 계층에서 읽어 JSP 로 렌더링합니다.",
         "Maven 빌드와 Tomcat 11 실행을 멀티스테이지 Dockerfile 로 분리해 이미지 크기를 줄였습니다.",
         "외부 JSON 파일을 지정하면 재빌드 없이 내용을 바꿀 수 있습니다.",
-        "GitHub Actions 가 화면을 정적 페이지로 내보내 GitHub Pages 에 자동 게시합니다."
+        "GitHub Actions 가 화면을 정적 페이지로 내보내 GitHub Pages 에 자동 게시합니다.",
+        "확인 코드를 입력해야 화면이 열리며, 게시본은 화면을 암호화해 올립니다."
       ],
       "tech": ["Java", "Spring Framework", "JSP / JSTL", "Tomcat", "Docker", "Maven", "GitHub Actions"],
       "links": [
@@ -139,5 +187,37 @@
 
   "certificates": [
     { "name": "자동차운전면허 1종 보통" }
+  ],
+
+  "equipments": [
+    {
+      "name": "Home Desktop",
+      "note": "개인 개발 환경",
+      "specs": [
+        "CPU · AMD Ryzen 7 3700X 8-Core",
+        "RAM · 32GB",
+        "GPU · NVIDIA GeForce RTX 4060 Ti",
+        "SSD · 2TB",
+        "OS · Windows 11 Pro 64비트"
+      ]
+    },
+    {
+      "name": "LG 그램 16 (2024년형)",
+      "note": "회사 지급 노트북 · 2029년 교체 예정",
+      "specs": [
+        "CPU · Intel Core Ultra 5 125H",
+        "RAM · 32GB",
+        "GPU · Intel Arc Graphics",
+        "SSD · 500GB",
+        "OS · Windows 11 Pro 64비트"
+      ]
+    },
+    {
+      "name": "그 외 기기",
+      "specs": [
+        "레노버 Y704",
+        "아이폰 17 (일반 모델)"
+      ]
+    }
   ]
 }

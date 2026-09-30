@@ -4,6 +4,8 @@ rem Uses .tomcat\ in this project as CATALINA_BASE, so the Tomcat install itself
 setlocal
 cd /d "%~dp0"
 call "%~dp0setenv.cmd"
+rem Load .env if present (GATE_CODE etc.), same file docker compose reads
+if exist "%~dp0.env" for /f "usebackq eol=# tokens=1,* delims==" %%a in ("%~dp0.env") do set "%%a=%%b"
 call "%~dp0build.cmd"
 if errorlevel 1 exit /b 1
 

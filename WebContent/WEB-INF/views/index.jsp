@@ -166,8 +166,30 @@
 	</section>
 	</c:if>
 
+	<%-- 장비 --%>
+	<c:if test="${not empty p.equipments}">
+	<section class="section alt" id="equipment">
+		<div class="wrap">
+			<h2 class="section-title">장비</h2>
+			<div class="equip-grid">
+				<c:forEach var="device" items="${p.equipments}">
+					<div class="card">
+						<h3 class="card-title"><c:out value="${device.name}"/></h3>
+						<c:if test="${not empty device.note}"><p class="muted small"><c:out value="${device.note}"/></p></c:if>
+						<c:if test="${not empty device.specs}">
+							<ul class="bullets">
+								<c:forEach var="sp" items="${device.specs}"><li><c:out value="${sp}"/></li></c:forEach>
+							</ul>
+						</c:if>
+					</div>
+				</c:forEach>
+			</div>
+		</div>
+	</section>
+	</c:if>
+
 	<%-- 연락 --%>
-	<section class="section alt" id="contact">
+	<section class="section" id="contact">
 		<div class="wrap contact">
 			<h2 class="section-title">연락</h2>
 			<p>프로젝트 제안이나 궁금한 점이 있으면 편하게 연락 주세요.</p>

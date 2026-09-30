@@ -9,6 +9,7 @@ target
 logs
 .tomcat
 _site
+.env
 *.cmd
 Dockerfile
 compose.yaml

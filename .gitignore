@@ -8,5 +8,7 @@
 /.idea/
 *.iml
 /.playwright-mcp/
+# 확인 코드(GATE_CODE) 등 로컬 설정
+/.env
 # scripts/export-static.sh 출력 (GitHub Pages 용 정적 페이지)
 /_site/

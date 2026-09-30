@@ -12,7 +12,8 @@ public record Portfolio(
 		List<Experience> experiences,
 		List<Project> projects,
 		List<Education> educations,
-		List<Certificate> certificates) {
+		List<Certificate> certificates,
+		List<Equipment> equipments) {
 
 	public record Link(String label, String url) {}
 
@@ -49,4 +50,6 @@ public record Portfolio(
 	public record Education(String school, String major, String period, String note) {}
 
 	public record Certificate(String name, String issuer, String date) {}
+
+	public record Equipment(String name, String note, List<String> specs) {}
 }

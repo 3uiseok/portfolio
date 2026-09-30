@@ -8,3 +8,5 @@ services:
       - "8080:8080"
     environment:
       TZ: Asia/Seoul
+      # 확인 코드 잠금. .env 파일(커밋하지 않음)에 GATE_CODE=코드 로 지정한다. 비우면 잠금 없이 동작
+      GATE_CODE: ${GATE_CODE:-}
