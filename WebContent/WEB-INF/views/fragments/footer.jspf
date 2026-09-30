@@ -1,0 +1,11 @@
+<%-- 공통 푸터 + 스크립트 --%>
+<footer class="site-footer">
+	<div class="wrap footer-inner">
+		<span>&copy; <c:out value="${empty p ? '' : p.profile.name}"/> &middot; Spring Framework 6 &middot; Tomcat 11 &middot; Docker</span>
+		<c:if test="${not empty serverTime}">
+			<span class="muted">서버 시각 <c:out value="${serverTime}"/></span>
+		</c:if>
+	</div>
+</footer>
+<button id="to-top" class="to-top" type="button" aria-label="맨 위로">&uarr;</button>
+<script src="${ctx}/js/main.js"></script>

@@ -1,0 +1,143 @@
+{
+  "_readme": "포트폴리오 내용 파일입니다. 아래 값을 본인 정보로 수정하세요. 목록을 비우거나 지우면 화면에서 해당 섹션이 사라집니다.",
+
+  "profile": {
+    "name": "전의석",
+    "photo": "https://avatars.githubusercontent.com/u/71710590?s=400&u=2e52bc909de0e9d5ec0361e79b909c5b016a59c8&v=4",
+    "title": "Web · Backend Developer",
+    "tagline": "Java · Spring 기반 웹 시스템을 개발하고 운영합니다.",
+    "intro": [
+      "2016년부터 Java와 Spring Framework로 공공·통신 분야의 웹 시스템을 개발하고 유지보수해 온 웹/백엔드 개발자입니다.",
+      "경찰청 민원포털 유지보수, 공항공사 상주 프로젝트, KT 지능망 운용관리 웹까지 폐쇄망을 포함한 운영 환경에서 웹/서버 개발을 맡아 왔습니다.",
+      "JDK 6부터 21까지, Tomcat 6부터 11까지 여러 세대의 환경을 다뤘고 JDK 7 시스템을 JDK 21로 마이그레이션한 경험이 있습니다."
+    ],
+    "email": "3uiseok@gmail.com",
+    "location": "대한민국, 서울",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/3uiseok" },
+      { "label": "Blog", "url": "https://blog.naver.com/3uiseok" }
+    ]
+  },
+
+  "skills": [
+    { "category": "Language", "items": ["Java (JDK 6 · 7 · 8 · 11 · 21)", "JavaScript", "SQL"] },
+    { "category": "Backend", "items": ["Spring Framework", "Spring MVC", "JSP / JSTL", "MQ 연동"] },
+    { "category": "Server / WAS", "items": ["Tomcat 6 · 7 · 8 · 11", "Linux (Red Hat)", "Windows Server"] },
+    { "category": "Database", "items": ["Oracle", "MySQL", "MariaDB", "Tibero", "MSSQL", "Altibase"] },
+    { "category": "형상관리 · 배포", "items": ["SVN", "GitLab", "Jenkins", "WAR 수작업 배포"] },
+    { "category": "기타", "items": ["폐쇄망 환경 개발", "EUC-KR · UTF-8 인코딩 환경", "Flutter (Android 앱 · 약 3개월)"] }
+  ],
+
+  "experiences": [
+    {
+      "company": "(주)헤리트",
+      "role": "ICT 개발팀 · 웹 개발자",
+      "period": "2020.03 - 현재",
+      "summary": "KT 지능망 프로젝트의 웹 개발을 담당하고 있습니다.",
+      "highlights": [
+        "폐쇄망 환경의 운용관리 웹 개발",
+        "131, 1390 웹 개발",
+        "Spring Framework 기반 JDK 6 · 7 · 8 · 21 환경 개발, JDK 7 → 21 마이그레이션",
+        "Linux(Red Hat) 서버 환경에서 WAR 수작업 배포"
+      ]
+    },
+    {
+      "company": "바즐시스템",
+      "role": "웹/서버 개발자",
+      "period": "2016 - 2019.12",
+      "summary": "공공기관 프로젝트의 웹/서버 개발 및 유지보수를 담당했습니다.",
+      "highlights": [
+        "경찰청(서대문) 대민포털 민원포털서비스 유지보수 · 약 1년 6개월",
+        "공항공사 프로젝트 약 2년 상주(폐쇄망) · 서비스 관제 및 생체인증 게이트 관련 MQ 전송 개발",
+        "MQ 서비스 개발, 모니터링 웹 개발",
+        "Jenkins 배포, Windows Server 환경"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "kt-in-web",
+      "name": "KT 지능망 운용관리 웹",
+      "period": "2020.03 - 현재",
+      "role": "(주)헤리트 ICT 개발팀 · 웹 개발",
+      "summary": "KT 지능망 프로젝트의 폐쇄망 운용관리 웹과 131 · 1390 웹을 개발하고 있습니다.",
+      "description": [
+        "폐쇄망 환경에서 운용관리 웹을 개발하고 유지보수합니다.",
+        "131, 1390 웹을 개발했습니다.",
+        "Spring Framework 기반으로 JDK 6 · 7 · 8 · 21 환경을 다루며, JDK 7 시스템을 JDK 21로 마이그레이션했습니다.",
+        "Linux(Red Hat) 서버에 WAR 파일을 수작업으로 배포하는 환경에서 작업합니다."
+      ],
+      "tech": ["Java", "Spring Framework", "Tomcat", "Linux (Red Hat)"],
+      "links": [],
+      "featured": true
+    },
+    {
+      "id": "airport-mq",
+      "name": "공항공사 서비스 관제 · 생체인증 게이트",
+      "period": "2016 - 2019.12 중 약 2년",
+      "role": "바즐시스템 · 서버 개발 · 상주",
+      "summary": "공항공사에 상주하며 폐쇄망에서 서비스 관제 및 생체인증 게이트 관련 MQ 전송을 개발했습니다.",
+      "description": [
+        "서비스 관제 및 생체인증 게이트 프로젝트의 MQ 전송 기능을 개발했습니다.",
+        "약 2년간 현장에 상주하며 폐쇄망 환경에서 개발과 유지보수를 진행했습니다."
+      ],
+      "tech": ["Java", "MQ"],
+      "links": [],
+      "featured": true
+    },
+    {
+      "id": "police-portal",
+      "name": "경찰청 민원포털서비스 유지보수",
+      "period": "2016 - 2019.12 중 약 1년 6개월",
+      "role": "바즐시스템 · 웹 개발 및 유지보수",
+      "summary": "경찰청(서대문) 대민포털의 민원포털서비스를 유지보수했습니다.",
+      "description": [
+        "대민포털 민원포털서비스의 웹/서버 개발 및 유지보수를 담당했습니다."
+      ],
+      "tech": ["Java"],
+      "links": [],
+      "featured": false
+    },
+    {
+      "id": "es-web",
+      "name": "ES Web 포트폴리오 사이트",
+      "period": "2026.09",
+      "role": "개인 프로젝트 · 설계 및 개발 전체",
+      "summary": "Spring Framework 6 + JSP 로 만든 포트폴리오 웹. Docker 이미지로 어디서나 같은 환경으로 실행되고, GitHub Pages 로도 게시됩니다.",
+      "description": [
+        "포트폴리오 내용을 JSON 파일 하나로 관리하고 서비스 계층에서 읽어 JSP 로 렌더링합니다.",
+        "Maven 빌드와 Tomcat 11 실행을 멀티스테이지 Dockerfile 로 분리해 이미지 크기를 줄였습니다.",
+        "외부 JSON 파일을 지정하면 재빌드 없이 내용을 바꿀 수 있습니다.",
+        "GitHub Actions 가 화면을 정적 페이지로 내보내 GitHub Pages 에 자동 게시합니다."
+      ],
+      "tech": ["Java", "Spring Framework", "JSP / JSTL", "Tomcat", "Docker", "Maven", "GitHub Actions"],
+      "links": [
+        { "label": "소스", "url": "https://github.com/3uiseok/portfolio" }
+      ],
+      "featured": true
+    },
+    {
+      "id": "palserver-tools",
+      "name": "Palworld 전용 서버 운영 자동화",
+      "period": "2026.07",
+      "role": "개인 프로젝트",
+      "summary": "게임 전용 서버의 정기 재시작과 재시작 공지를 PowerShell 로 자동화한 운영 도구입니다.",
+      "description": [
+        "RCON 으로 접속자에게 재시작 예고를 보내고 저장한 뒤 안전하게 서버를 재시작합니다.",
+        "Windows 작업 스케줄러 등록을 토글 스크립트로 켜고 끌 수 있게 했습니다."
+      ],
+      "tech": ["PowerShell", "RCON", "Windows Task Scheduler"],
+      "links": [],
+      "featured": false
+    }
+  ],
+
+  "educations": [
+    { "school": "서원대학교", "major": "멀티미디어공학과", "period": "2010.03 - 2016.08", "note": "학사" }
+  ],
+
+  "certificates": [
+    { "name": "자동차운전면허 1종 보통" }
+  ]
+}

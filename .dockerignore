@@ -1,0 +1,15 @@
+# 빌드 컨텍스트에서 제외 (이미지 빌드에 필요 없는 것)
+.git
+.gitignore
+.idea
+.claude
+*.iml
+out
+target
+logs
+.tomcat
+_site
+*.cmd
+Dockerfile
+compose.yaml
+.dockerignore

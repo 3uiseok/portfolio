@@ -1,0 +1,17 @@
+<%-- 공통 <head>. 포함하기 전에 pageTitle 변수를 c:set 으로 지정한다. --%>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions"%>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><c:out value="${pageTitle}"/></title>
+<meta name="description" content="<c:out value='${p.profile.tagline}'/>">
+<link rel="icon" href="${ctx}/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="${ctx}/css/style.css">
+<script>
+	/* 저장된 테마를 첫 그리기 전에 적용해 화면 깜빡임을 막는다 */
+	try {
+		var t = localStorage.getItem('es-theme');
+		if (t) document.documentElement.setAttribute('data-theme', t);
+	} catch (e) {}
+</script>

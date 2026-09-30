@@ -1,0 +1,12 @@
+# 프로젝트 제외 경로
+/out/
+/target/
+/logs/
+# run.cmd 가 만드는 로컬 Tomcat 실행 폴더(CATALINA_BASE)
+/.tomcat/
+/.claude/
+/.idea/
+*.iml
+/.playwright-mcp/
+# scripts/export-static.sh 출력 (GitHub Pages 용 정적 페이지)
+/_site/

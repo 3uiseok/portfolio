@@ -1,0 +1,10 @@
+# docker compose up --build -d  ->  http://localhost:8080/web/
+services:
+  web:
+    build: .
+    image: es/web:0.0.1
+    container_name: es-web
+    ports:
+      - "8080:8080"
+    environment:
+      TZ: Asia/Seoul
