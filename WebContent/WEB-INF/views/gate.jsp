@@ -20,6 +20,7 @@
 		<div class="gate-icon" aria-hidden="true">&#x1F512;</div>
 		<h1>Portfolio</h1>
 		<p class="muted">확인 코드를 입력해 주세요.</p>
+		<p class="muted small gate-hint">힌트: birthday</p>
 		<input type="hidden" name="next" value="<c:out value='${gateNext}'/>">
 		<input id="gate-code" class="gate-input" type="password" name="code" inputmode="numeric"
 			placeholder="확인 코드" aria-label="확인 코드" autocomplete="off" required autofocus>
