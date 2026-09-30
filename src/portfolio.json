@@ -26,8 +26,8 @@
     { "category": "Server / WAS", "items": ["Tomcat 6 · 7 · 8 · 11", "Linux (Red Hat)", "Windows Server", "Docker (개인 환경 구축)"] },
     { "category": "Database", "items": ["Oracle", "MySQL", "MariaDB", "Tibero", "MSSQL", "Altibase"] },
     { "category": "형상관리 · 배포", "items": ["SVN", "GitLab", "Jenkins", "WAR 수작업 배포", "sh 배포 스크립트"] },
-    { "category": "IDE · 개발 도구", "items": ["IntelliJ IDEA Ultimate", "Eclipse (2021-03 · 최신 버전)", "WinSCP", "DBeaver", "Beyond Compare", "Xshell"] },
-    { "category": "AI 활용", "items": ["Claude Code (Max 요금제)", "Gemini AI Pro", "Playwright", "Aside 브라우저", "바이브 코딩"] },
+    { "category": "IDE · 개발 도구", "items": ["IntelliJ IDEA Ultimate", "Eclipse (2021-03 · 최신 버전)", "WinSCP", "DBeaver", "Beyond Compare", "Xshell", "Playwright", "Aside 브라우저"] },
+    { "category": "AI 활용", "items": ["Claude Code (Max 요금제)", "Gemini AI Pro"] },
     { "category": "기타", "items": ["폐쇄망 환경 개발", "EUC-KR · UTF-8 인코딩 환경", "Flutter (App Store · Google Play 출시)"] }
   ],
 
@@ -105,7 +105,7 @@
     },
     {
       "id": "ai-workflow",
-      "name": "AI 도구 활용 · 바이브 코딩",
+      "name": "AI 도구 활용",
       "period": "2026 - 현재",
       "role": "개발 업무 · 사이드 프로젝트에 접목",
       "summary": "Claude Code(Max 요금제)와 Gemini AI Pro 를 개발 업무와 사이드 프로젝트에 접목해 쓰고 있습니다.",
