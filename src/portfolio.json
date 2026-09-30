@@ -182,7 +182,8 @@
   ],
 
   "educations": [
-    { "school": "서원대학교", "major": "멀티미디어공학과", "period": "2010.03 - 2016.08", "note": "학사" }
+    { "school": "서원대학교", "major": "멀티미디어공학과", "period": "2010.03 - 2016.08", "note": "학사" },
+    { "school": "충북고등학교", "major": "이과", "note": "청주 태생" }
   ],
 
   "certificates": [

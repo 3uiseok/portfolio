@@ -142,7 +142,7 @@
 						<li>
 							<strong><c:out value="${ed.school}"/></strong>
 							<span class="muted"> <c:out value="${ed.major}"/><c:if test="${not empty ed.note}"> &middot; <c:out value="${ed.note}"/></c:if></span>
-							<div class="muted small"><c:out value="${ed.period}"/></div>
+							<c:if test="${not empty ed.period}"><div class="muted small"><c:out value="${ed.period}"/></div></c:if>
 						</li>
 					</c:forEach>
 				</ul>
