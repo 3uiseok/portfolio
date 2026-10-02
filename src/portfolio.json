@@ -196,6 +196,7 @@
       "note": "개인 개발 환경",
       "specs": [
         "CPU · AMD Ryzen 7 3700X 8-Core",
+        "메인보드 · GIGABYTE X570 AORUS ELITE",
         "RAM · DDR4 32GB (16+16)",
         "GPU · NVIDIA GeForce RTX 4060 Ti",
         "SSD · 2TB",
@@ -204,11 +205,13 @@
     },
     {
       "name": "laptop-lg-gram14 (2023)",
-      "note": "LG 그램 14 · 2023년형",
+      "note": "LG 그램 14 · 2023년형 · 반납 예정",
       "specs": [
         "CPU · Intel Core 13세대",
+        "RAM · 16GB (온보드)",
         "GPU · Intel Iris Xe Graphics",
-        "화면 · 14형 WUXGA"
+        "화면 · 14형 WUXGA",
+        "OS · Windows 11 Pro 64비트"
       ]
     },
     {
@@ -216,7 +219,7 @@
       "note": "LG 그램 16 · 2024년형 · 회사 지급 노트북 · 2029년 교체 예정",
       "specs": [
         "CPU · Intel Core Ultra 5 125H",
-        "RAM · 32GB",
+        "RAM · 32GB (온보드)",
         "GPU · Intel Arc Graphics",
         "SSD · 500GB",
         "OS · Windows 11 Pro 64비트"
@@ -226,14 +229,20 @@
       "name": "laptop-samsung-plus2",
       "note": "삼성 노트북 Plus2",
       "specs": [
+        "CPU · Intel Core i5-1135G7",
         "RAM · 16GB (8GB 증설)",
-        "화면 · 15.6형 FHD"
+        "SSD · 256GB",
+        "화면 · 15.6형 FHD",
+        "OS · Windows 11 Pro 64비트"
       ]
     },
     {
       "name": "tablet-lenovo-y704",
       "note": "레노버 Y704",
       "specs": [
+        "AP · Qualcomm Snapdragon 8 Elite",
+        "RAM · 12GB",
+        "저장공간 · 256GB",
         "OS · Android"
       ]
     },
@@ -242,6 +251,8 @@
       "note": "일반 모델",
       "specs": [
         "AP · Apple A19",
+        "RAM · 8GB",
+        "저장공간 · 256GB",
         "화면 · 6.3형 OLED 120Hz",
         "OS · iOS"
       ]
