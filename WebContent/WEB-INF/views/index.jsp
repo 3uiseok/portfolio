@@ -177,9 +177,9 @@
 						<h3 class="card-title"><c:out value="${device.name}"/></h3>
 						<c:if test="${not empty device.note}"><p class="muted small"><c:out value="${device.note}"/></p></c:if>
 						<c:if test="${not empty device.specs}">
-							<ul class="bullets">
-								<c:forEach var="sp" items="${device.specs}"><li><c:out value="${sp}"/></li></c:forEach>
-							</ul>
+							<div class="chips">
+								<c:forEach var="sp" items="${device.specs}"><span class="chip"><c:out value="${sp}"/></span></c:forEach>
+							</div>
 						</c:if>
 					</div>
 				</c:forEach>

@@ -186,6 +186,7 @@ img.avatar { display: block; object-fit: cover; }
 .skill-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
 .equip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
 .equip-grid .card-title { margin-bottom: 4px; }
+.equip-grid .chips { margin-top: 12px; }
 
 /* ===== 타임라인 ===== */
 .timeline { list-style: none; margin: 0; padding: 0; }

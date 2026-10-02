@@ -192,19 +192,28 @@
 
   "equipments": [
     {
-      "name": "Home Desktop",
+      "name": "desktop-home",
       "note": "개인 개발 환경",
       "specs": [
         "CPU · AMD Ryzen 7 3700X 8-Core",
-        "RAM · 32GB",
+        "RAM · DDR4 32GB (16+16)",
         "GPU · NVIDIA GeForce RTX 4060 Ti",
         "SSD · 2TB",
         "OS · Windows 11 Pro 64비트"
       ]
     },
     {
-      "name": "LG 그램 16 (2024년형)",
-      "note": "회사 지급 노트북 · 2029년 교체 예정",
+      "name": "laptop-lg-gram14 (2023)",
+      "note": "LG 그램 14 · 2023년형",
+      "specs": [
+        "CPU · Intel Core 13세대",
+        "GPU · Intel Iris Xe Graphics",
+        "화면 · 14형 WUXGA"
+      ]
+    },
+    {
+      "name": "laptop-lg-gram16 (2024)",
+      "note": "LG 그램 16 · 2024년형 · 회사 지급 노트북 · 2029년 교체 예정",
       "specs": [
         "CPU · Intel Core Ultra 5 125H",
         "RAM · 32GB",
@@ -214,10 +223,35 @@
       ]
     },
     {
-      "name": "그 외 기기",
+      "name": "laptop-samsung-plus2",
+      "note": "삼성 노트북 Plus2",
       "specs": [
-        "레노버 Y704",
-        "아이폰 17 (일반 모델)"
+        "RAM · 16GB (8GB 증설)",
+        "화면 · 15.6형 FHD"
+      ]
+    },
+    {
+      "name": "tablet-lenovo-y704",
+      "note": "레노버 Y704",
+      "specs": [
+        "OS · Android"
+      ]
+    },
+    {
+      "name": "iPhone 17",
+      "note": "일반 모델",
+      "specs": [
+        "AP · Apple A19",
+        "화면 · 6.3형 OLED 120Hz",
+        "OS · iOS"
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S21",
+      "specs": [
+        "RAM · 8GB",
+        "화면 · 6.2형 FHD+ 120Hz",
+        "OS · Android"
       ]
     }
   ]
