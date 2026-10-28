@@ -170,11 +170,23 @@
 	<c:if test="${not empty p.equipments}">
 	<section class="section alt" id="equipment">
 		<div class="wrap">
-			<h2 class="section-title">장비</h2>
+			<c:set var="retiredCount" value="0"/>
+			<c:forEach var="device" items="${p.equipments}">
+				<c:if test="${device.retired}"><c:set var="retiredCount" value="${retiredCount + 1}"/></c:if>
+			</c:forEach>
+			<div class="section-head">
+				<h2 class="section-title">장비</h2>
+				<c:if test="${retiredCount > 0}">
+					<div class="chips filter">
+						<button type="button" id="equip-toggle" class="chip chip-btn" aria-pressed="false"
+							data-count="${retiredCount}">과거 장비 보기 (${retiredCount})</button>
+					</div>
+				</c:if>
+			</div>
 			<div class="equip-grid">
 				<c:forEach var="device" items="${p.equipments}">
-					<div class="card">
-						<h3 class="card-title"><c:out value="${device.name}"/></h3>
+					<div class="card${device.retired ? ' equip-retired' : ''}"<c:if test="${device.retired}"> hidden</c:if>>
+						<h3 class="card-title"><c:out value="${device.name}"/><c:if test="${device.retired}"> <span class="chip equip-badge">반납</span></c:if></h3>
 						<c:if test="${not empty device.note}"><p class="muted small"><c:out value="${device.note}"/></p></c:if>
 						<c:if test="${not empty device.specs}">
 							<div class="chips">

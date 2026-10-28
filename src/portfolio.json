@@ -205,7 +205,8 @@
     },
     {
       "name": "laptop-lg-gram14 (2023)",
-      "note": "LG 그램 14 · 2023년형 · 반납 예정",
+      "note": "LG 그램 14 · 2023년형 · 반납 완료",
+      "retired": true,
       "specs": [
         "CPU · Intel Core 13세대",
         "RAM · 16GB (온보드)",

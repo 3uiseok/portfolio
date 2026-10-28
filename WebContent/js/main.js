@@ -1,4 +1,4 @@
-/* 포트폴리오 화면 동작: 테마 전환, 현재 섹션 표시, 프로젝트 필터, 맨 위로, 모바일 메뉴 */
+/* 포트폴리오 화면 동작: 테마 전환, 현재 섹션 표시, 프로젝트 필터, 과거 장비 토글, 맨 위로, 모바일 메뉴 */
 (function () {
 	'use strict';
 
@@ -75,6 +75,20 @@
 			});
 			var empty = document.getElementById('project-empty');
 			if (empty) empty.hidden = shown > 0;
+		});
+	}
+
+	/* ---- 과거 장비(반납·처분) 보기/숨기기 ---- */
+	var equipToggle = document.getElementById('equip-toggle');
+	if (equipToggle) {
+		var retired = Array.prototype.slice.call(document.querySelectorAll('.equip-retired'));
+		var count = equipToggle.getAttribute('data-count');
+		equipToggle.addEventListener('click', function () {
+			var show = equipToggle.getAttribute('aria-pressed') !== 'true';
+			retired.forEach(function (c) { c.hidden = !show; });
+			equipToggle.setAttribute('aria-pressed', show ? 'true' : 'false');
+			equipToggle.classList.toggle('active', show);
+			equipToggle.textContent = (show ? '과거 장비 숨기기' : '과거 장비 보기') + ' (' + count + ')';
 		});
 	}
 
