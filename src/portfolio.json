@@ -207,12 +207,18 @@
       "name": "laptop-lg-gram14 (2023)",
       "note": "LG 그램 14 · 2023년형 · 반납 완료",
       "retired": true,
+      "status": "반납",
       "specs": [
         "CPU · Intel Core 13세대",
         "RAM · 16GB (온보드)",
         "GPU · Intel Iris Xe Graphics",
         "화면 · 14형 WUXGA",
         "OS · Windows 11 Pro 64비트"
+      ],
+      "history": [
+        "IntelliJ 프로젝트를 2~3개 동시에 켜면 메모리 부족으로 스로틀링·다운 발생",
+        "퇴사자가 반납한 laptop-lg-gram16 (2024)으로 교체",
+        "교체 후 반납 완료"
       ]
     },
     {
@@ -260,10 +266,18 @@
     },
     {
       "name": "Samsung Galaxy S21",
+      "note": "판매 완료 · 2026-10-29",
+      "retired": true,
+      "status": "판매",
       "specs": [
         "RAM · 8GB",
         "화면 · 6.2형 FHD+ 120Hz",
         "OS · Android"
+      ],
+      "history": [
+        "2026-10-29 당근에서 판매 (선금 받고 택배 거래)",
+        "상태: 화면 잔상 약간, 충전구 기스, 카메라 옆 기스 약하게",
+        "시세 15만원 → 10만원에 판매, 택배비 판매자 부담"
       ]
     }
   ]

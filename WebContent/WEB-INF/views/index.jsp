@@ -185,12 +185,18 @@
 			</div>
 			<div class="equip-grid">
 				<c:forEach var="device" items="${p.equipments}">
-					<div class="card${device.retired ? ' equip-retired' : ''}"<c:if test="${device.retired}"> hidden</c:if>>
-						<h3 class="card-title"><c:out value="${device.name}"/><c:if test="${device.retired}"> <span class="chip equip-badge">반납</span></c:if></h3>
+					<div class="card${device.retired ? ' equip-retired' : ''}${not empty device.history ? ' has-history' : ''}"<c:if test="${device.retired}"> hidden</c:if><c:if test="${not empty device.history}"> tabindex="0"</c:if>>
+						<h3 class="card-title"><c:out value="${device.name}"/><c:if test="${device.retired}"> <span class="chip equip-badge"><c:out value="${empty device.status ? '과거' : device.status}"/></span></c:if></h3>
 						<c:if test="${not empty device.note}"><p class="muted small"><c:out value="${device.note}"/></p></c:if>
 						<c:if test="${not empty device.specs}">
 							<div class="chips">
 								<c:forEach var="sp" items="${device.specs}"><span class="chip"><c:out value="${sp}"/></span></c:forEach>
+							</div>
+						</c:if>
+						<c:if test="${not empty device.history}">
+							<div class="equip-history" role="tooltip">
+								<strong>히스토리</strong>
+								<ul><c:forEach var="h" items="${device.history}"><li><c:out value="${h}"/></li></c:forEach></ul>
 							</div>
 						</c:if>
 					</div>

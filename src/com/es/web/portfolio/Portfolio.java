@@ -51,6 +51,15 @@ public record Portfolio(
 
 	public record Certificate(String name, String issuer, String date) {}
 
-	/** retired: 반납·처분한 과거 장비. 화면에서 기본으로 숨기고 토글로 보여 준다. */
-	public record Equipment(String name, String note, List<String> specs, boolean retired) {}
+	/**
+	 * retired: 반납·처분한 과거 장비. 화면에서 기본으로 숨기고 토글로 보여 준다.
+	 * status: 과거 장비 배지 문구(반납, 처분 등). history: 카드에 마우스를 올리면 보이는 경위.
+	 */
+	public record Equipment(
+			String name,
+			String note,
+			List<String> specs,
+			boolean retired,
+			String status,
+			List<String> history) {}
 }

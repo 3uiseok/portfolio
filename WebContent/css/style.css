@@ -188,8 +188,22 @@ img.avatar { display: block; object-fit: cover; }
 .equip-grid .card-title { margin-bottom: 4px; }
 .equip-grid .chips { margin-top: 12px; }
 .equip-grid .card[hidden] { display: none; }
-.equip-retired { opacity: 0.6; border-style: dashed; }
+.equip-retired { border-style: dashed; }
+.equip-retired > :not(.equip-history) { opacity: 0.6; }
 .equip-badge { padding: 1px 8px; margin-left: 6px; font-size: 0.75rem; vertical-align: middle; }
+/* 히스토리 말풍선: 카드에 마우스를 올리거나 포커스(키보드·터치)하면 카드 위에 뜬다 */
+.equip-grid .has-history { position: relative; cursor: help; }
+.equip-history {
+	position: absolute; left: 12px; right: 12px; bottom: calc(100% + 8px); z-index: 10;
+	padding: 12px 14px; border-radius: var(--radius);
+	background: var(--surface); border: 1px solid var(--accent); box-shadow: var(--shadow);
+	font-size: 0.85rem; line-height: 1.5;
+	visibility: hidden; opacity: 0; transform: translateY(4px);
+	transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+}
+.equip-history ul { margin: 6px 0 0; padding-left: 18px; }
+.has-history:hover .equip-history,
+.has-history:focus-within .equip-history { visibility: visible; opacity: 1; transform: none; }
 
 /* ===== 타임라인 ===== */
 .timeline { list-style: none; margin: 0; padding: 0; }
